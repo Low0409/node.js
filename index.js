@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const http = require('http');
 const server = http.createServer(app);
-const { Server } = require("socket.io");//まだ途中です。追加で出来次第出しなおします
+const { Server } = require("socket.io");
 const io = new Server(server);
 
 app.get('/', (req, res) => {
